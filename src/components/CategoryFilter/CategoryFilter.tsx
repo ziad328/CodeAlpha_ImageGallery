@@ -15,7 +15,10 @@ const FILTERS: { label: string; value: Category }[] = [
 
 const CategoryFilter = ({ activeCategory, onCategoryChange }: CategoryFilterProps) => {
   return (
-    <nav aria-label="Image category filter" className="flex flex-wrap justify-center gap-3 py-6">
+    <nav
+      aria-label="Image category filter"
+      className="flex flex-wrap justify-center gap-2 sm:gap-3 py-4 sm:py-6 px-2"
+    >
       {FILTERS.map(({ label, value }) => {
         const isActive = activeCategory === value;
         return (
@@ -25,7 +28,7 @@ const CategoryFilter = ({ activeCategory, onCategoryChange }: CategoryFilterProp
             aria-pressed={isActive}
             onClick={() => onCategoryChange(value)}
             className={[
-              'relative px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide',
+              'relative px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide',
               'transition-all duration-300 ease-out cursor-pointer',
               'focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0d0d14]',
               isActive

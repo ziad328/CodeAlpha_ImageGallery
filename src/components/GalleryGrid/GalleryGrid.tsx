@@ -13,7 +13,7 @@ interface ThumbProps {
 
 const GalleryThumbnail = ({ image, index, onClick }: ThumbProps) => {
   const spanClass =
-    image.span === 'tall' ? 'row-span-2' : image.span === 'wide' ? 'col-span-2' : '';
+    image.span === 'tall' ? 'row-span-2' : image.span === 'wide' ? 'sm:col-span-2' : '';
 
   return (
     <button
@@ -51,15 +51,6 @@ const GalleryThumbnail = ({ image, index, onClick }: ThumbProps) => {
           {image.title}
         </h3>
       </div>
-
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out"
-      >
-        <span className="text-2xl bg-white/10 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center border border-white/20 scale-75 group-hover:scale-100 transition-transform duration-300 ease-out">
-          🔍
-        </span>
-      </div>
     </button>
   );
 };
@@ -75,7 +66,7 @@ const GalleryGrid = ({ images, onImageClick }: GalleryGridProps) => {
   }
 
   return (
-    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[240px]">
+    <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[240px]">
       {images.map((image, index) => (
         <GalleryThumbnail key={image.id} image={image} index={index} onClick={onImageClick} />
       ))}

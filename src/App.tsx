@@ -35,21 +35,21 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-[#0d0d14] text-white">
-      <header className="relative overflow-hidden border-b border-white/5 pb-6">
-        <div
+      <header className="relative overflow-hidden border-b border-white/5 pb-4 sm:pb-6">
+          <div
           aria-hidden="true"
-          className="absolute -top-32 left-1/2 -translate-x-1/2 w-150 h-75
+            className="absolute -top-32 left-1/2 -translate-x-1/2 w-150 h-75
                      rounded-full bg-violet-600/20 blur-[120px] pointer-events-none"
-        />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 text-center">
-          <p className="text-violet-400 text-sm font-semibold tracking-[0.25em] uppercase mb-3">
+          />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 text-center">
+          <p className="text-violet-400 text-xs sm:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] uppercase mb-2 sm:mb-3">
             Photo Collection
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight pb-1
                          bg-linear-to-br from-white via-white to-violet-300 bg-clip-text text-transparent">
             Image Gallery
           </h1>
-          <p className="mt-4 text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-gray-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed px-2">
             Explore a curated selection of stunning photographs spanning nature,
             architecture, abstract art, and world travel.
           </p>
@@ -64,11 +64,11 @@ const App = () => {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-10">
         <GalleryGrid images={filteredImages} onImageClick={(i) => setLightboxIndex(i)} />
       </main>
 
-      <footer className="border-t border-white/5 py-8 text-center text-gray-600 text-sm">
+      <footer className="border-t border-white/5 py-6 sm:py-8 text-center text-gray-600 text-xs sm:text-sm">
         <p>
           Built with <span className="text-violet-400 font-semibold">React + TypeScript</span>
           {' · '}
