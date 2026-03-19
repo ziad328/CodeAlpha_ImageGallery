@@ -3,7 +3,7 @@ import type { ImageItem } from '../types';
 export const IMAGES: ImageItem[] = [
   {
     id: 1,
-    src: '/images/nature_1.png',
+    src: './images/nature_1.png',
     alt: 'Misty mountain forest at dawn with sunbeams through pine trees',
     title: 'Dawn in the Pines',
     description: 'Sunbeams pierce a misty mountain forest at the break of dawn, illuminating emerald moss and dew-covered pine needles.',
@@ -12,7 +12,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 2,
-    src: '/images/nature_2.png',
+    src: './images/nature_2.png',
     alt: 'Turquoise tropical waterfall cascading into a crystal lagoon',
     title: 'Tropical Cascade',
     description: 'A hidden waterfall in the heart of a lush jungle drops into a perfectly clear turquoise lagoon.',
@@ -21,7 +21,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 3,
-    src: '/images/nature_3.png',
+    src: './images/nature_3.png',
     alt: "Iceland's black sand beach at sunset with huge crashing waves",
     title: 'Black Sand Dusk',
     description: 'Volcanic black sand, towering basalt sea stacks, and enormous Atlantic waves beneath a blazing Icelandic sunset.',
@@ -29,7 +29,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 4,
-    src: '/images/architecture_1.png',
+    src: './images/architecture_1.png',
     alt: 'Ultra-modern glass skyscraper facade from below',
     title: 'Glass & Sky',
     description: 'A minimalist tower of geometric glass panels reaches toward a cloudless blue sky in a modern metropolis.',
@@ -38,7 +38,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 5,
-    src: '/images/architecture_2.png',
+    src: './images/architecture_2.png',
     alt: 'Gothic cathedral interior with stained glass windows',
     title: 'Sacred Geometry',
     description: 'Centuries-old stone arches soar overhead as kaleidoscopic light pours through vibrant stained glass.',
@@ -47,7 +47,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 6,
-    src: '/images/architecture_3.png',
+    src: './images/architecture_3.png',
     alt: 'Japanese wooden bridge over a koi pond in a zen garden',
     title: 'Zen Crossing',
     description: 'A traditional Japanese bridge arcs gently over a tranquil koi pond, framed by cherry blossom clouds.',
@@ -55,7 +55,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 7,
-    src: '/images/abstract_1.png',
+    src: './images/abstract_1.png',
     alt: 'Swirling neon fluid art in blue, magenta and gold',
     title: 'Liquid Neon',
     description: 'Electric currents of blue, magenta, and molten gold swirl together in an otherworldly fluid composition.',
@@ -64,7 +64,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 8,
-    src: '/images/abstract_2.png',
+    src: './images/abstract_2.png',
     alt: 'Hexagonal tessellation with purple to cyan gradient',
     title: 'Hex Matrix',
     description: 'A glowing hexagonal grid fades from deep violet to electric cyan against a void-black backdrop.',
@@ -73,7 +73,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 9,
-    src: '/images/travel_1.png',
+    src: './images/travel_1.png',
     alt: 'Colorful spice market in Marrakech Morocco',
     title: 'Marrakech Market',
     description: 'Mounds of vibrant saffron, turmeric, and chili fill the serpentine lanes of a centuries-old Moroccan souk.',
@@ -82,7 +82,7 @@ export const IMAGES: ImageItem[] = [
   },
   {
     id: 10,
-    src: '/images/travel_2.png',
+    src: './images/travel_2.png',
     alt: 'Aerial view of Tokyo at blue hour with Mount Fuji in the distance',
     title: 'Tokyo Dusk',
     description: 'The electric grid of Tokyo stretches to the horizon as Mount Fuji looms silently in the twilight distance.',
