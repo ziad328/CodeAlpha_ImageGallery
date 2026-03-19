@@ -1,6 +1,6 @@
 # React & TypeScript Image Gallery
 
-A fully responsive, interactive image gallery built with React and TypeScript. This component features category filtering, smooth CSS transitions, and a fully functional lightbox with next/previous navigation.
+It's a task in the CodeAlpha internship and it's A fully responsive, interactive image gallery built with React and TypeScript. This component features category filtering, smooth CSS transitions, and a fully functional lightbox with next/previous navigation.
 
 ## Features
 * **CSS Grid Layout:** Responsive thumbnail grid that adapts to any screen size.
